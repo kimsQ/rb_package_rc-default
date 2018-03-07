@@ -1,0 +1,454 @@
+/*!
+ * kimsQ Rb v2.2 모바일 기본형 레이아웃 스타일
+ * layout Version: 1.0
+ * Homepage: http://www.kimsq.com
+ * Copyright 2018 redblock inc
+ * Based on RC v1
+*/
+
+/**
+ * 목차:
+ *
+ * 1 - Reset 초기화
+ * 2 - Structure 구조
+ * 3 - Header 헤더
+ * 4 - Content 컨텐츠
+ * 5 - Sidebar 사이드바
+ * 6 - Footer 풋터
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1 - Reset 초기화
+ * ----------------------------------------------------------------------------
+ */
+
+html {
+  height: 100%
+}
+
+@media (min-width: 768px) {
+ html {
+   font-size: 18px;
+ }
+}
+@media (min-width: 1024px) {
+ html {
+   font-size: 20px;
+ }
+}
+
+body, th, td, input, select, textarea, button {
+  line-height: 1.5;
+  font-family: AppleSDGothicNeo-Light,'HelveticaNeue','Malgun Gothic','맑은 고딕',sans-serif;
+  color: #000;
+}
+
+body {
+  background-color: #f7f7f9;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../_images/bg-loading.png);
+  color: #333;
+}
+
+/**
+ * 2 - Structure 구조
+ *
+ * 컬럼,여백 사이즈 조정
+ * ----------------------------------------------------------------------------
+ */
+
+ @media (max-width: 575px) {
+   .container {
+      padding-left: 0;
+      padding-right: 0
+   }
+   .content .row {
+     display: block;
+     margin-left: 0;
+     margin-right: 0
+   }
+   .content .col-sm-6 {
+     padding-left: 0;
+     padding-right: 0
+   }
+ }
+
+ @media (min-width: 576px) {
+   .container {
+      max-width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+   .row {
+    margin-left: -5px;
+    margin-right: -5px;
+   }
+   .row .col-sm-6 {
+    padding-right: 5px;
+    padding-left: 5px;
+   }
+   .row .col-sm-6:first-child {
+     padding-left: 0
+   }
+   .row .col-sm-6:last-child {
+     padding-right: 0
+   }
+
+   .widget {
+     border-left: .0625rem solid #e4e6e7;
+     border-right: .0625rem solid #e4e6e7;
+   }
+
+ }
+
+
+.snap-content {
+  background-color: red
+}
+
+
+/**
+ * 3 - Drawer 사이드 메뉴
+ * ----------------------------------------------------------------------------
+ */
+
+.snap-drawer .bar-nav .title {
+  margin: 0;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.navigate-rightdown:after,
+.navigate-updown:after{
+  position: absolute;
+  top: 35%;
+  right: .9375rem;
+  display: inline-block;
+  font-family: Ratchicons;
+  font-size: 1rem;
+  line-height: 1;
+  color: #bbb;
+}
+.navigate-updown:after {
+  content: '\e81f';
+}
+.navigate-updown.collapsed:after {
+  content: '\e814';
+}
+
+
+.snap-drawer .table-view .table-view {
+  background-color: #f6f6f8;
+  border-top: 0.0625rem solid #d8dce2;
+}
+
+
+/**
+ * 3 - Header 헤더
+ * ----------------------------------------------------------------------------
+ */
+.bar.bg-primary a[role="button"]:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/**
+  * 4 - Footer 풋터
+  * ----------------------------------------------------------------------------
+  */
+
+.footer {
+  padding: 1.5625rem 0 2.4375rem;
+  text-align: center;
+  font-size: .75rem;
+  color: #888;
+}
+.footer .nav-link {
+  padding: 0 .375rem;
+  color: #888;
+}
+.footer .nav .divider {
+  display: inline-block;
+  width: .0625rem;
+  height: .625rem;
+  margin: .125rem 0 0 .0625rem;
+  font-size: .0625rem;
+  line-height: 0;
+  color: transparent;
+  background-color: #d9d9d9;
+  vertical-align: top;
+}
+
+
+
+/**
+ * 5 - Content 컨텐츠
+ * ----------------------------------------------------------------------------
+ */
+
+ .card:focus,
+ .table-view-cell:focus a {
+   background-color: #f4f4f4;
+ }
+
+ .mejs__container {
+  margin-bottom: 1rem
+ }
+
+/* 사진 캡션 */
+ .captionjs figcaption {
+   font-size: 0.8125rem;
+   line-height: 1.5;
+   padding: 0.625rem 0.9375rem;
+   border: 0.0625rem solid #ddd;
+   border-top: none;
+   background-color: #eee;
+ }
+
+
+.modal .cover {
+  position: relative;
+  height:12.5rem;
+  background-color: #ddd;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.modal .cover .cover-backdrop::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, .5);
+}
+.modal .cover .cover-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+.modal .cover .cover-title {
+  margin: 0 auto 0.375rem;
+  width: 80%;
+  padding-top: 5.625rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.0625rem solid #eee;
+  font-size: 1.375rem;
+  color: #fff;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0,0,0,0.6);
+}
+.modal .cover .cover-text {
+  color: #eee;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0,0,0,0.6);
+}
+
+/**
+ * 6 - Sidebar 사이드바
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+/**
+* 7 - Search 통합검색
+* ----------------------------------------------------------------------------
+*/
+ #modal-search .bar-nav {
+   height: 3.75rem;
+ }
+ #modal-search .bar-nav ~ .content {
+   padding-top: 3.75rem;
+ }
+ #modal-search .input-group .form-control {
+   border: none
+ }
+ #modal-search .bar-nav .input-group {
+  top: 0;
+}
+ #modal-search .input-group > .input-group-btn > .btn {
+  padding: 0.6rem 0.7rem;
+  color: #ccc
+}
+
+/*검색어 추천*/
+.autocomplete-suggestions {
+  top: 4.0625rem !important;
+  overflow-y: auto;
+  left:0 !important;
+  padding-left: 0;
+  margin-top: .0625rem;
+  margin-bottom: 0.9375rem;
+  list-style: none;
+  width: 100% !important;
+  background-color: transparent;
+  background-color: #fff
+}
+.autocomplete-suggestion {
+  position: relative;
+  padding:.6rem 1rem .5rem 1rem;
+  overflow: hidden;
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.075);
+  display: block;
+  overflow: hidden;
+  color: inherit;
+}
+.autocomplete-suggestion:empty {
+  display: none
+}
+.autocomplete-suggestion{color:#333}
+.autocomplete-suggestion strong{font-weight:normal;color:#0275d8}
+
+/**
+ * 8 - commponent 풋터
+ * ----------------------------------------------------------------------------
+ */
+
+/* sub nav */
+
+.nav-table {
+  display: table;
+  width: 100%;
+  font-size: .9375rem;
+  border-radius: 0;
+  border-collapse:collapse;
+}
+.nav-table-row {
+  display: table-row;
+}
+.nav-table-cell {
+  display: table-cell;
+  overflow: hidden;
+  width: 25%;
+  max-width: 6.25rem;
+  min-height: 1rem;
+  padding: .75rem 0 .625rem;
+  color: #666;
+  letter-spacing: -.0625rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  border: .0625rem solid rgba(0, 0, 0, 0.075);;
+}
+.nav-table-cell:active {
+  background-color: #f4f4f4
+}
+.nav-table-cell.active,
+.nav-table-cell:active {
+  color: #0275d8 !important;
+}
+
+
+
+/* modal */
+ .modal .login_nav {
+   margin-top: 1.5rem;
+   margin-bottom: 2rem;
+   text-align: center;
+   border-bottom: .0625rem solid #ddd;
+ }
+ .modal .login_nav .list-inline .list-inline-item {
+  border-right: .0625rem solid #ddd;
+  padding-right: .6rem;
+  line-height: 1;
+}
+
+.table-view-cell a {
+  letter-spacing: -.0625rem;
+  color: #101010;
+}
+
+/* table-view */
+
+ /*card*/
+
+
+.widget {
+  border-top: .0625rem solid #e4e6e7;
+  border-bottom:.0625rem solid #e4e6e7;
+  background-color: #fff
+}
+.widget header {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !importa
+  background-color: #fff;
+  border-bottom: 0;
+  padding: .7rem .5rem .3rem
+}
+.widget header h3 {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 1.13em;
+  line-height: 1.29;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.widget header a {
+  color: #888;
+  font-size: .85rem
+}
+
+.widget .card-deck {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-right: -0.15rem;
+  margin-bottom: 0.75rem;
+  margin-left: -0.15rem;
+}
+.widget .card-deck .card {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  margin-right: 0.15rem;
+  margin-bottom: 0;
+  margin-left: 0.15rem;
+  border: 0
+}
+.widget .card-deck .card:active {
+  background-color: #f4f4f4
+}
+
+.widget .card-deck .card-block {
+  padding: 0.35rem 0.25rem;
+  color: #101010;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: -.0625rem;
+  font-size: .9rem;
+  overflow: hidden;
+  max-height: 2.75rem;
+}
+
+.widget.widget-2 .card-deck .card-block {
+  max-height: 2rem;
+}
+
+ /* utility */
+ .bg-faded {
+   background: #f2f2f2;
+ }

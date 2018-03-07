@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>KIMSQ_RB_MEDIASET</title>
+	<item>
+		<uid>100</uid>
+		<category>메인</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>main-001.jpg</name>
+		<size>1111</size>
+		<width>1500</width>
+		<height>980</height>
+		<caption><![CDATA[행복을 이어주는 사람들]]></caption>
+		<description><![CDATA[Photo by rawpixel.com on Unsplash]]></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>101</uid>
+		<category>메인</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>main-002.jpg</name>
+		<size>1111</size>
+		<width>1500</width>
+		<height>844</height>
+		<caption><![CDATA[길은 다스리는 것이다]]></caption>
+		<description><![CDATA[Photo by Émile Perron on Unsplash]]></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>102</uid>
+		<category>메인</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>main-003.jpg</name>
+		<size>1111</size>
+		<width>1500</width>
+		<height>1000</height>
+		<caption><![CDATA[시대를 앞서가면서도, 더 새로워야 했다]]></caption>
+		<description><![CDATA[Photo by Jacob Miller on Unsplash]]></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>103</uid>
+		<category>메인</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>main-004.jpg</name>
+		<size>1111</size>
+		<width>1500</width>
+		<height>1000</height>
+		<caption><![CDATA[한계는 깨어지기 위해 존재한다]]></caption>
+		<description><![CDATA[Photo by Igor Ovsyannykov on Unsplash]]></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>104</uid>
+		<category>배너</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>banner-001.jpg</name>
+		<size>73411</size>
+		<width>640</width>
+		<height>200</height>
+		<caption><![CDATA[평창올림픽 광고]]></caption>
+		<description><![CDATA[세계인의 축제 2018 평창 손안에서 즐기자]]></description>
+		<src></src>
+		<linkurl>https://play.google.com/store/apps/details?id=com.pyeongchang2018.mobileguide</linkurl>
+		<time></time>
+	</item>
+
+
+	<item>
+		<uid>105</uid>
+		<category>서비스</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>service-001.jpg</name>
+		<size>73411</size>
+		<width>1500</width>
+		<height>1500</height>
+		<caption><![CDATA[Photo by Janko Ferlič on Unsplash]]></caption>
+		<description></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>106</uid>
+		<category>서비스</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>service-002.jpg</name>
+		<size>73411</size>
+		<width>1500</width>
+		<height>1000</height>
+		<caption><![CDATA[Photo by Brooke Lark on Unsplash]]></caption>
+		<description></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>107</uid>
+		<category>서비스</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>service-003.jpg</name>
+		<size>73411</size>
+		<width>1500</width>
+		<height>996</height>
+		<caption><![CDATA[Photo by rawpixel.com on Unsplash]]></caption>
+		<description></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>108</uid>
+		<category>서비스</category>
+		<type>2</type>
+		<url>/files/</url>
+		<name>service-004.jpg</name>
+		<size>73411</size>
+		<width>1500</width>
+		<height>2250</height>
+		<caption><![CDATA[Photo by Redd Angelo on Unsplash]]></caption>
+		<description></description>
+		<src></src>
+		<linkurl></linkurl>
+		<time></time>
+	</item>
+	<item>
+		<uid>109</uid>
+		<category>서비스</category>
+		<type>8</type>
+		<url>https://youtu.be</url>
+		<name>lnVuEYApPoQ</name>
+		<size>73411</size>
+		<width>1500</width>
+		<height>2250</height>
+		<caption><![CDATA[평창올림픽 홍보영상]]></caption>
+		<description></description>
+		<src>lnVuEYApPoQ</src>
+		<linkurl></linkurl>
+		<time>01:35</time>
+	</item>
+</channel>
